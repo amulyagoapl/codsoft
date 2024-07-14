@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro-content {
+    width: 50%; 
+    margin-bottom: 100px;
+    margin-left: 120px;
+}
+.logo {
+    height: 50px;
+    width: 140px;
+}
+
+.person {
+    width: 40%; 
+    max-width: 900px; 
+    height: 500px;
+}
+h1{
+    font-size: 3rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-links .fab.fa-github {
+    color: #333; 
+}
+
+.social-links .fab.fa-linkedin {
+    color: #0077b5; 
+}
+
+.social-links .fab.fa-google {
+    color: #db4437; 
+}
+
+.social-links .fab.fa-twitter {
+    color: #1da1f2;
+}
+
+.social-links .fab.fa-facebook {
+    color: #1877f2; 
+}
+
+.buttons {
+    margin-top: 3rem;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin: 0 1.5rem;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff; 
+}
+
+.buttons .contact-me {
+    background-color: #1c1685; 
+}
+
+.buttons .resume {
+    background-color: #1c1685; 
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-content, .person {
+        width: 100%;
+        margin: 0;
+    }
+
+    .person {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+    }
+
+    .buttons .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
